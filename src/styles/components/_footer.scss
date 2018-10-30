@@ -1,0 +1,34 @@
+.gatsby__footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 10px 0;
+  background: $white-color;
+  box-shadow: 0 1px 10px $grey-color-light;
+
+  &-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &-credits {
+    font-family: $secondary-font;
+    font-style: italic;
+
+    &-link {
+      color: $main-color;
+      text-decoration: none;
+    }
+  }
+
+  &-nav {
+    display: inline-block;
+  }
+
+  &-link {
+    padding: 10px;
+    color: $grey-color-light;
+  }
+}

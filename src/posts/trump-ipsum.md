@@ -1,6 +1,7 @@
 ---
 title: "Trump ipsum"
 date: "2016-11-04"
+imgurl: "http://www2.pictures.zimbio.com/mp/P1bFv6KVp0tl.jpg"
 ---
 
 You’re disgusting. Lorem Ipsum is the single greatest threat. We are not - we are not keeping up with other websites.
@@ -43,3 +44,4 @@ My placeholder text, I think, is going to end up being very good with women. An 
 
 Lorem Ipsum better hope that there are no "tapes" of our conversations before he starts leaking to the press! We have so many things that we have to do better... and certainly ipsum is one of them. It’s about making placeholder text great again. That’s what people want, they want placeholder text to be great again.
 
+<img src="http://www2.pictures.zimbio.com/mp/P1bFv6KVp0tl.jpg" alt="img">

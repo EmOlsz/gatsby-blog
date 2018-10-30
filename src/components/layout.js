@@ -20,7 +20,9 @@ export default ({ children }) => (
       <div className="gatsby">
         <Header logoTitle={data.site.siteMetadata.title} />
         <main className="gatsby__main-content">
-          {children}
+          <div className="gatsby__container">
+            {children}
+          </div>
         </main>
         <Footer />
       </div>

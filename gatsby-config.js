@@ -21,9 +21,25 @@ module.exports = {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: ['Lato', 'Lobster']
+          families: [
+            'Playfair Display:regular,regularitalic,bold,bolditalic',
+            'Fira Sans:extra-light,extra-lightitalic,regular,regularitalic,medium,mediumitalic',
+          ]
         }
       }
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: "GatsbyJS",
+        short_name: "GatsbyJS",
+        start_url: "/",
+        background_color: "#6b37bf",
+        theme_color: "#6b37bf",
+        display: "minimal-ui",
+        icon: "src/static/itsg_global.png",
+      },
+    },
+    'gatsby-plugin-offline',
   ]
 };
