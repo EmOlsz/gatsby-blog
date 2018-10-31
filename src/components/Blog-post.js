@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Layout from './layout';
+import Layout from './Layout';
 
 export default ({ data }) => {
   console.log(data);
