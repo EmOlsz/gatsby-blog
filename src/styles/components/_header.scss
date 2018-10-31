@@ -37,7 +37,7 @@
   &-link {
     display: inline-block;
     position: relative;
-    padding: 10px;
+    padding: 10px 20px;
     color: $grey-color-light;
     text-decoration: none;
     overflow: hidden;
@@ -45,18 +45,18 @@
     &:before {
       content: '';
       position: absolute;
-      left: -10px;
-      bottom: 5px;
-      width: 100%;
+      left: -40px;
+      bottom: 3px;
+      width: 60%;
       height: 3px;
       background: $main-color;
       opacity: .7;
-      transform: rotate(-3deg) translateX(-100%);
+      transform: rotate(-3deg) translateX(-100%) skew(88deg);
       @include transition(transform, .4s, ease);
     }
 
     &:hover:before {
-      transform: rotate(-3deg) translateX(0);
+      transform: rotate(-4deg) translateX(100%) skew(88deg);
     }
   }
 }

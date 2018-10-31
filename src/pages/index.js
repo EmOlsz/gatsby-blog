@@ -10,26 +10,29 @@ export default ({ data }) => {
     <Layout>
       <div className="home">
         <div className="home__newest">
-          <div className="home__heading gatsby__underline">
+          <div className="home__heading">
             <span>Newest posts</span>
           </div>
-          <ul className="home__newest-list">
-            {data.allMarkdownRemark.edges.slice(0, recentPostCounter).map(({node}) => (
-              <li className="home__newest-list-element" key={node.id}>
-                <Link className="home__newest-list-element-anchor" to={node.fields.slug}>
-                  <div className="home__newest-list-element-title">{node.frontmatter.title}</div>
-                  <div className="home__newest-list-element-excerpt">{node.excerpt}</div>
-                  <img className="home__newest-list-element-image" src={node.frontmatter.imgurl} alt="img" />
-                </Link>
-              </li>
-            ))}
-          </ul>
+          <div className="home__content">
+            <ul className="home__newest-list">
+              {data.allMarkdownRemark.edges.slice(0, recentPostCounter).map(({node}) => (
+                <li className="home__newest-list-element" key={node.id}>
+                  <Link className="home__newest-list-element-anchor" to={node.fields.slug}>
+                    <div className="home__newest-list-element-title">{node.frontmatter.title}</div>
+                    <div className="home__newest-list-element-excerpt">{node.excerpt}</div>
+                    <img className="home__newest-list-element-image" src={node.frontmatter.imgurl} alt="img" />
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
+        <div className="gatsby__divider" />
         <div className="home__post">
-          <div className="home__heading gatsby__underline">
+          <div className="home__heading">
             <span>All posts ({data.allMarkdownRemark.totalCount})</span>
           </div>
-          <div className="home__post-list-container">
+          <div className="home__content">
             <ul className="home__post-list">
               {data.allMarkdownRemark.edges.map(({node}) => (
                 <li className="home__post-list-element" key={node.id}>
